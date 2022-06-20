@@ -1,0 +1,134 @@
+.bg-image {
+    background-image: url("../img/placeholder-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+/* Header Section */
+header {
+    background-color: #252729;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 40px;
+    background-color: #82DBD8;
+    display: inline-block;
+    color: #252729;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+header nav {
+    float: right;
+    font-size: 25px;
+    margin: 25px 50px;
+    color: #82DBD8;
+    
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+/* General Semantic Selectors */
+main {
+    margin-top: 25px;
+    background-color: white;
+    /* display: flex;
+    flex-flow: column nowrap; */
+}
+
+
+/* About Me Section */
+
+.about-me {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 25px 25px;
+}
+
+.about-items {
+    padding-left: 50px
+}
+
+.about-me h1 {
+    font-size: 40px;
+    border-right: 5px solid black;
+    min-width: 200px;
+    width: 200px;
+}
+
+
+/* Work Section */
+.work { 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 25px 25px;
+}
+
+.work h1{
+    font-size: 40px;
+    border-right: 5px solid black;
+    min-width: 200px;
+    width: 200px;
+}
+
+.work-items {
+    padding-left: 50px;
+}
+
+
+/* Contact Me Section */
+.contact-me {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 25px 25px;
+}
+
+.contact-me h1 {
+    font-size: 40px;
+    border-right: 5px solid black;
+    min-width: 200px;
+    width: 200px;
+}
+
+.contact-me ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.contact-me ul li {
+    /* display: inline-block; */
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 0px 50px;
+
+}
+
+.contact-items {
+    padding-left: 50px;
+}
+
+.primary-item {
+    background-image: url(../img/dummy-main.png);
+    /* background-size: cover; */
+    /* background-position: center; */
+    height: 400px;
+    width: 600px;
+}
