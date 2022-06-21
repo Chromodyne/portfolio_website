@@ -66,7 +66,6 @@ main {
 
 .about-items {
     padding-left: 50px;
-    position: relative;
 }
 
 .about-me h1 {
@@ -76,19 +75,18 @@ main {
     width: 200px;
 }
 
-.about-me p {
-    float: right;
-}
-
 #headshot {
     margin-left: 50px;
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
 }
-
 
 /* Work Section */
 .work { 
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     margin: 25px 25px;
 }
 
@@ -100,6 +98,80 @@ main {
 }
 
 .work-items {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    margin: 0px 200px;
+}
+
+.primary-item {
+    align-self: center;
+    background-image: url(../img/dummy-main.png);
+    background-position: center;
+    width: 100%;
+    min-width: 600px;
+    min-height: 400px;
+    border: 5px solid cyan;
+    filter: grayscale(70%);
+}
+
+.primary-item:hover {
+    filter: grayscale(0%);
+}
+
+.secondary-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.secondary-1 {
+    margin: 0px 20px;
+    background-image: url(../img/dummy-secondary.png);
+    min-width: 300px;
+    min-height: 200px;
+    border: 5px solid cyan;
+    filter: grayscale(70%);
+
+}
+
+.secondary-2 {
+    margin: 0px 20px;
+    background-image: url(../img/dummy-secondary.png);
+    min-width: 300px;
+    min-height: 200px;
+    border: 5px solid cyan;
+    filter: grayscale(70%);
+}
+
+.secondary-3 {
+    margin: 0px 20px;
+    /* background-image: url(../img/dummy-secondary.png); */
+    background-color: red;
+    min-width: 300px;
+    min-height: 200px;
+    border: 5px solid cyan;
+    filter: grayscale(70%);
+}
+
+ .secondary-1:hover {
+    filter:grayscale(0%);
+}
+
+.secondary-2:hover {
+    filter:grayscale(0%);
+}
+
+.secondary-3:hover {
+    filter:grayscale(0%);
+}
+
+/* TODO: These are commented for testing. */
+/*
+.work-items {
+    display: flex;
+    flex-direction: row;
     padding-left: 50px;
     max-width: 50%;
 }
@@ -107,7 +179,7 @@ main {
 .primary-item {
     background-image: url(../img/dummy-main.png);
     background-position: center;
-    align-self: flex-start;
+    align-self: center;
     flex-grow: 1;
     max-width: 600px;
     min-height: 400px;
@@ -143,11 +215,38 @@ main {
     width: 33%;
     border: 5px solid cyan;
     margin: 0px 25px;
+}*/
+
+
+.contact-me {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 25px 25px;
 }
 
+.contact-me h1 {
+    font-size: 40px;
+    border-right: 5px solid black;
+    min-width: 200px;
+    width: 200px;
+}
 
-/* Contact Me Section */
-.contact-me {
+.contact-me ul {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0px 5%;
+}
+.contact-items li {
+    align-self: center;
+    font-size: 30px;
+    margin: 0px 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+ /* Contact Me Section */
+/* .contact-me {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -167,15 +266,25 @@ main {
 }
 
 .contact-me ul li {
-    /* display: inline-block; */
+    /* display: inline-block;
     border-bottom: 3px solid #82DBD8;
     font-size: 32px;
     padding: 0px 50px;
-}
+}*/
 
-.contact-items {
+/* .contact-items {
     padding-left: 50px;
     align-self: center;
+}  */
+
+
+/* Page Responsiveness */
+@media screen and (max-width: 990px) {
+
+    .about-me{
+        flex-wrap: wrap;
+    }
+
 }
 
 /* Collapse to Hamburger Menu */
