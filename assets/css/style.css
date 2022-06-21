@@ -1,3 +1,7 @@
+:root {
+    --border-color: #82DBD8;
+}
+
 .bg-image {
     background-image: url("../img/placeholder-background.png");
     background-size: cover;
@@ -54,9 +58,7 @@ main {
     flex-flow: column nowrap; */
 }
 
-
 /* About Me Section */
-
 .about-me {
     display: flex;
     flex-flow: row nowrap;
@@ -65,6 +67,7 @@ main {
 }
 
 .about-items {
+    display: flex;
     padding-left: 50px;
 }
 
@@ -76,10 +79,13 @@ main {
 }
 
 #headshot {
-    margin-left: 50px;
+    margin: 0px 50px;
     border-radius: 50%;
     max-width: 150px;
+    min-width: 150px;
     max-height: 150px;
+    min-width: 150px;
+
 }
 
 /* Work Section */
@@ -111,7 +117,7 @@ main {
     width: 100%;
     min-width: 600px;
     min-height: 400px;
-    border: 5px solid cyan;
+    border: 5px solid var(--border-color);
     filter: grayscale(70%);
 }
 
@@ -126,33 +132,27 @@ main {
     margin: 50px 0px;
 }
 
-.secondary-1 {
+.secondary {
     margin: 0px 20px;
-    background-image: url(../img/dummy-secondary.png);
     min-width: 300px;
     min-height: 200px;
-    border: 5px solid cyan;
-    filter: grayscale(70%);
-
-}
-
-.secondary-2 {
-    margin: 0px 20px;
-    background-image: url(../img/dummy-secondary.png);
-    min-width: 300px;
-    min-height: 200px;
-    border: 5px solid cyan;
+    border: 5px solid var(--border-color);
     filter: grayscale(70%);
 }
 
-.secondary-3 {
-    margin: 0px 20px;
-    /* background-image: url(../img/dummy-secondary.png); */
-    background-color: red;
-    min-width: 300px;
-    min-height: 200px;
-    border: 5px solid cyan;
-    filter: grayscale(70%);
+/* These IDs are used to change the background images of the secondary work items. */
+/* These are currently placeholder images. */
+#secondary-1 {
+    background-image: url(../img/dummy-secondary.png);
+
+}
+
+#secondary-2 {
+    background-image: url(../img/dummy-secondary.png);
+}
+
+#secondary-3 {
+    background-image: url(../img/dummy-secondary.png);
 }
 
  .secondary-1:hover {
@@ -167,6 +167,8 @@ main {
     filter:grayscale(0%);
 }
 
+
+/* Contact Me Section */
 .contact-me {
     display: flex;
     justify-content: flex-start;
@@ -198,28 +200,21 @@ main {
 /* Page Responsiveness */
 @media screen and (max-width: 990px) {
 
-    .about-me{
+    .about-items {
         flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #headshot {
+        margin-bottom: 20px;
+    }
+
+    .contact-items {
+        flex-direction: column;
+    }
+
+    .primary-item {
+        float: left;
     }
 
 }
-
-/* Collapse to Hamburger Menu */
-/* 48em = 768px */
-
-/* @media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none
-    }
-} */

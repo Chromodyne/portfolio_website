@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en_us">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-        <title>Devin Sinitiere</title>
+        <title>Devin Sinitiere's Portfolio</title>
 
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -21,10 +20,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#about-me">About Me</a></li>
                     <li><a href="#work">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="./assets/doc/resume.pdf">Resume</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,63 +34,30 @@
 
             <section class="about-me">
                 
-                <h1>About Me</h1>
+                <a name="about-me"></a>
 
-                <img id="headshot" src="./assets/img/headshot-150x150-dummy.png" alt="Devin Sinitiere.">
+                <h1>About Me</h1>
 
                 <article class="about-items">
 
+                    <!-- This image is a placeholder until I get a proper headshot. -->
+                    <img id="headshot" src="./assets/img/placeholder-picture.JPG" alt="Devin Sinitiere.">
                     <!-- TODO: Finish this.  -->
                     <p>
                       Greetings! My name is Devin Sinitiere. I am an aspiring software engineer from Las Vegas, NV. I have been coding
-                      for approximately 5 years now in my free time. Only recently have I decided to turn my passion for software development
-                      into a career path through utilizing GA Tech's Coding Bootcamp. While I am relatively new to the field of
-                      web development. A variety of my projects, both complete and ongoing, can be found below as well as on my
-                      GitHub page. I look forward to ...
+                      for approximately 7 years now in my free time. Only recently have I decided to turn my passion for software development
+                      into a viable career path by enrolling in GA Tech's Coding Bootcamp. While I am relatively new to the field of
+                      web development I have up to intermediate level knowledge in a variety of programming languages including: x86 Assembly, C, C++, C#,
+                      LUA, JS, etc. A variety of my projects, both complete and ongoing, can be found below as well as on my
+                      GitHub page.
                     </p>
                 </article>
 
             </section>
 
-
-            <!-- <section class="work" >
-
-                <a title="work"></a>
-
-                <h1>Work</h1>
-
-                <article class="work-items">
-
-                    <div class="primary-item">
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                        imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-                        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-                        eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
-                        varius laoreet. Quisque rutrum.
-                        </p>
-                    </div>
-
-                    
-
-                </article>
-
-                <div class="secondary-items">
-
-                    <div class="secondary-1">1</div>
-                    <div class="secondary-2">2</div>
-                    <div class="secondary-3">3</div>
- 
-                </div>
-
-            </section> -->
-
+            <!-- TODO: Make this section more responsive. -->
             <section class="work">
-
+                <a name="work"></a>
                 <h1>Work</h1>
 
                 <div class="work-items">
@@ -99,19 +65,20 @@
                         Zone Experience Project
                     </div>
                     <div class="secondary-items">
-                        <p class="secondary-1">Operating System</p>
-                        <p class="secondary-2">Secondary 2</p>
-                        <p class="secondary-3">Secondary 3</p>
+                        <p id="secondary-1" class="secondary">Operating System</p>
+                        <p id="secondary-2" class="secondary">Secondary 2</p>
+                        <p id="secondary-3" class="secondary">Secondary 3</p>
                     </div>
                 </div>
 
             </section>
 
             <section class="contact-me">
-
+                <a name="contact-me"></a>
                <h1>Contact Me</h1>
 
                <ul class="contact-items">
+                <!-- Not keen on putting my personal number here. May remove later. Placeholder for now. -->
                     <li>(555) 555-5555</li>
                     <li><a href="mailto:dsinitiere@outlook.com">dsinitiere@outlook.com</a></li>
                     <li><a href="https://github.com/Chromodyne">GitHub</a></li>
