@@ -148,7 +148,7 @@ main {
 
 .primary-item {
     align-self: center;
-    background-image: url(../img/dummy-main.png);
+    background-image: url(../img/Anomaly-Logo-600x400.jpg);
     background-position: center;
     width: 600;
     min-width: 600px;
@@ -191,7 +191,7 @@ main {
 /* These IDs are used to change the background images of the secondary work items. */
 /* These are currently placeholder images. */
 #secondary-1 {
-    background-image: url(../img/dummy-secondary.png);
+    background-image: url(../img/pexels-luis-gomes-300x200.jpg);
 }
 
 #secondary-2 {
