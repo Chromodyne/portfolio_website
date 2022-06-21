@@ -2,12 +2,9 @@
     --border-color: #82DBD8;
 }
 
-.bg-image {
-    background-image: url("../img/placeholder-background.png");
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 100%;
+/* General Selectors */
+body {
+    background-color: #FDFDF0;
 }
 
 a {
@@ -15,7 +12,13 @@ a {
     text-decoration: none;
 }
 
-/* Header Section */
+p {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    font-size: 18px;
+    
+}
+
+/* Header & Nav Section */
 header {
     background-color: #252729;
     padding-bottom: 15px;
@@ -50,6 +53,36 @@ header nav ul li {
     ;
 }
 
+/* Main Background Image */
+.bg-image {
+    background-image: url("../img/placeholder-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+/* Used for the subtitle on the bottom right of the background image. */
+.sub-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.subtitle {
+    color: #252729;
+    position: relative;
+    z-index: 999;
+    margin-top: 7%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: #82DBD8;
+    align-self: center;
+}
+
 /* General Semantic Selectors */
 main {
     margin-top: 25px;
@@ -76,6 +109,11 @@ main {
     border-right: 5px solid black;
     min-width: 200px;
     width: 200px;
+}
+
+.about-items a {
+    text-decoration: underline;
+    color: #1c6d6a;
 }
 
 #headshot {
@@ -144,7 +182,6 @@ main {
 /* These are currently placeholder images. */
 #secondary-1 {
     background-image: url(../img/dummy-secondary.png);
-
 }
 
 #secondary-2 {
@@ -155,18 +192,18 @@ main {
     background-image: url(../img/dummy-secondary.png);
 }
 
- .secondary-1:hover {
+/* Determines functionality  */
+#secondary-1:hover {
     filter:grayscale(0%);
 }
 
-.secondary-2:hover {
+#secondary-2:hover {
     filter:grayscale(0%);
 }
 
-.secondary-3:hover {
+#secondary-3:hover {
     filter:grayscale(0%);
 }
-
 
 /* Contact Me Section */
 .contact-me {
@@ -213,8 +250,12 @@ main {
         flex-direction: column;
     }
 
-    .primary-item {
-        float: left;
+    .work-items {
+        margin-left: 5px;
+    }
+
+    .subtitle {
+        margin-bottom: 20%;
     }
 
 }
