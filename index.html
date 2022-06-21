@@ -14,15 +14,15 @@
 
     <body>
         
-        <header>
+        <header class="header">
 
             <h1>Devin Sinitiere</h1>
 
             <nav>
                 <ul>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                     <li><a href="#">Resume</a></li>
                 </ul>
             </nav>
@@ -36,7 +36,10 @@
                 
                 <h1>About Me</h1>
 
+                <img id="headshot" src="./assets/img/headshot-150x150-dummy.png">
+
                 <article class="about-items">
+
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -45,7 +48,9 @@
                         imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
                         Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
                         eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
-                        varius laoreet. Quisque rutrum. 
+                        varius laoreet. Quisque rutrum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                     </p>
                 </article>
 
@@ -54,9 +59,12 @@
 
             <section class="work" >
 
+                <a name="work"></a>
+
                 <h1>Work</h1>
 
-                <article class="work-items">
+                <!-- <article class="work-items"> -->
+
                     <div class="primary-item">
 
                         <p>
@@ -73,22 +81,27 @@
 
                     <div class="secondary-items">
 
-
+                        <div class="secondary-1">1</div>
+                        <div class="secondary-2">2</div>
+                        <div class="secondary-3">3</div>
+     
                     </div>
-                    
-                </article>
+
+                <!-- </article> -->
 
             </section>
 
             <section class="contact-me">
+
+                <a name="contact"></a>
 
                 <h1>Contact Me</h1>
 
                 <article class="contact-items">
                     <ul>
                         <li>(555) 555-5555</li>
-                        <li>dsinitiere@outlook.com</li>
-                        <li><a href="#">GitHub</a></li>
+                        <li><a href="mailto:dsinitiere@outlook.com">dsinitiere@outlook.com</a></li>
+                        <li><a href="https://github.com/Chromodyne">GitHub</a></li>
                         <li><a href="#">Twitter</a></li>
                     </ul>
                 </article>
