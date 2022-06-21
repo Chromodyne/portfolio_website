@@ -72,7 +72,7 @@ header nav ul li {
     min-width: 100%;
 }
 
-.subtitle {
+#subtitle {
     color: #252729;
     position: relative;
     z-index: 999;
@@ -82,6 +82,13 @@ header nav ul li {
     font-size: 30px;
     background-color: #82DBD8;
     align-self: center;
+}
+
+/* Just for fun, let's translate the quote if it's hovered over. */
+/* I wanted to replace the text entirely instead of appending the translation; however,*/
+/* everything I found using pure CSS was an ugly hack so I decided to keep it as is for now. */
+#subtitle:hover:after {
+    content: "\"Through hardship, to the stars.\""
 }
 
 /* General Semantic Selectors */
@@ -247,6 +254,10 @@ main {
 /* Page Responsiveness */
 @media screen and (max-width: 990px) {
 
+    #subtitle {
+        margin-bottom: 20%;
+    }
+
     .about-items {
         flex-wrap: wrap;
         flex-direction: column;
@@ -265,12 +276,21 @@ main {
         margin-left: 5px;
     }
 
-    .subtitle {
-        margin-bottom: 20%;
+    .primary-item {
+        width: 300px;
+        min-width: 300px;
+        height: 200px;
+        min-height: 200px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .secondary-items {
+        margin-top: 15px;
     }
 
     #secondary-2 {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     #secondary-3 {
