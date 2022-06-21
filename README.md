@@ -6,8 +6,8 @@
 
 ## About ##
 
-Greetings! My name is Devin Sinitiere. I am an aspiring software engineer from Las Vegas, NV. I have been coding for approximately 7 years now in my free time. Only recently have I decided to turn my passion for software development into a viable career path by enrolling in GA Tech's Coding Bootcamp. While I am relatively new to the field of
-web development I have up to intermediate level knowledge in a variety of programming languages including: x86 Assembly, C, C++, C#, LUA, JS, etc.
+Greetings! My name is Devin Sinitiere. I am an aspiring software engineer from Las Vegas, NV. I have been coding for approximately 5 years now in my free time. Only recently have I decided to turn my passion for software development into a viable career path by enrolling in GA Tech's Coding Bootcamp. While I am relatively new to the field of
+web development I have up to intermediate level knowledge in a variety of programming languages including: x86 Assembly, C, C++, C#, LUA, JS, etc. Please feel free to browse my repositories to get an idea of the kind of things I'm capable of.
 
 ---
 
@@ -17,3 +17,4 @@ web development I have up to intermediate level knowledge in a variety of progra
 
 ## Screenshot ##
 
+![Website Screenshot](./assets/img/website-screenshot.png)
