@@ -115,6 +115,7 @@ main {
 }
 
 .secondary-items {
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     margin-top: 20px;  
