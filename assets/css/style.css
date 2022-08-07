@@ -207,7 +207,7 @@ main {
 }
 
 #secondary-3 {
-    background-image: url(../img/dummy-secondary.png);
+    background-image: url(../img/360-degrees-300x200.png);
 }
 
 /* Determines functionality of secondary elements on hover. Currently removes grayscale filter.*/
